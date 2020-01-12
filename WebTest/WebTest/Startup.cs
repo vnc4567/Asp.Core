@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Application;
 using Application.Common.Behaviors;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -28,10 +29,7 @@ namespace WebTest
         {
             services.AddControllersWithViews();
             services.AddMvc();
-            services.AddMediatR(typeof(Startup));
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehaviour<,>));
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
-
+            services.AddApplication();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

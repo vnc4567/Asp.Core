@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Application.Person
 {
-	public class PersonValidator : AbstractValidator<Person>
+	public class PersonValidator : AbstractValidator<PersonVM>
 	{
 		public PersonValidator()
 		{
