@@ -11,7 +11,6 @@
           "AutoMapper": "9.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Domain": "1.0.0",
-          "FluentValidation.Mvc5": "8.6.0",
           "MediatR": "8.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.0",
           "ServiceStack": "5.7.0"
@@ -41,14 +40,6 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "7.0.0.0"
-          }
-        }
-      },
-      "FluentValidation.Mvc5/8.6.0": {
-        "runtime": {
-          "lib/net45/FluentValidation.Mvc.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.0.0"
           }
         }
       },
@@ -1219,13 +1210,6 @@
       "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
       "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
-    },
-    "FluentValidation.Mvc5/8.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-clkcCPpJzmsr8odi5S8SaoRX4PzOQRQPrJ2opmxqe5jfzhc4Dz1T8hnR1nwIupmW9ziJMdLtlhy8RypJKYbIpA==",
-      "path": "fluentvalidation.mvc5/8.6.0",
-      "hashPath": "fluentvalidation.mvc5.8.6.0.nupkg.sha512"
     },
     "MediatR/8.0.0": {
       "type": "package",

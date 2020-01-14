@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Person;
 using Application.Person.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,13 @@ namespace WebTest.Controllers
             return View(result);
         }
 
+        public async Task<IActionResult> Update(PersonVM model)
+        {
+            //TODO create command
+            GetPersonQuery query = new GetPersonQuery(2);
+            var result = await _mediator.Send(query);
+            return View(result);
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -26,17 +26,33 @@
           }
         }
       },
-      "FluentValidation.Mvc5/8.6.0": {
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
         "runtime": {
-          "lib/net45/FluentValidation.Mvc.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.6.0.0"
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "7.0.0.0"
           }
         }
       },
       "MediatR/8.0.0": {
         "runtime": {
           "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/8.0.0": {
+        "dependencies": {
+          "MediatR": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
           }
@@ -1166,9 +1182,10 @@
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "9.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Domain": "1.0.0",
-          "FluentValidation.Mvc5": "8.6.0",
           "MediatR": "8.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.0",
           "ServiceStack": "5.7.0"
         },
         "runtime": {
@@ -1195,12 +1212,12 @@
       "path": "automapper/9.0.0",
       "hashPath": "automapper.9.0.0.nupkg.sha512"
     },
-    "FluentValidation.Mvc5/8.6.0": {
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-clkcCPpJzmsr8odi5S8SaoRX4PzOQRQPrJ2opmxqe5jfzhc4Dz1T8hnR1nwIupmW9ziJMdLtlhy8RypJKYbIpA==",
-      "path": "fluentvalidation.mvc5/8.6.0",
-      "hashPath": "fluentvalidation.mvc5.8.6.0.nupkg.sha512"
+      "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
     },
     "MediatR/8.0.0": {
       "type": "package",
@@ -1208,6 +1225,13 @@
       "sha512": "sha512-cYSDJ2b/dIiwTLW/ZW/SQcXq9I3WF6KR4D0KN4hxWR08tZqcvcVS1bQXZbsANdQdTQfxx+ZFp5WkHLMyeoR5Zw==",
       "path": "mediatr/8.0.0",
       "hashPath": "mediatr.8.0.0.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qGa+dbfrpk6y01swgc0uM+jG5tkb5xVeY1P4iByd3NQCDO7nmrMBnBRoMGhKlSigQ6iWXDiwOpzC01W4xrJxLg==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/8.0.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/2.1.1": {
       "type": "package",

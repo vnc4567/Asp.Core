@@ -7,7 +7,6 @@ using System.Text;
 
 namespace Application.Person
 {
-	[Validator(typeof(PersonValidator))]
 	public class PersonVM : IMapFrom<Domain.Person>
 	{
 		public int Id { get; set; }

@@ -28,15 +28,6 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "FluentValidation.Mvc5/8.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/FluentValidation.Mvc.dll": {}
-        },
-        "runtime": {
-          "lib/net45/FluentValidation.Mvc.dll": {}
-        }
-      },
       "MediatR/8.0.0": {
         "type": "package",
         "compile": {
@@ -1896,19 +1887,6 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
-      ]
-    },
-    "FluentValidation.Mvc5/8.6.0": {
-      "sha512": "clkcCPpJzmsr8odi5S8SaoRX4PzOQRQPrJ2opmxqe5jfzhc4Dz1T8hnR1nwIupmW9ziJMdLtlhy8RypJKYbIpA==",
-      "type": "package",
-      "path": "fluentvalidation.mvc5/8.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fluentvalidation.mvc5.8.6.0.nupkg.sha512",
-        "fluentvalidation.mvc5.nuspec",
-        "lib/net45/FluentValidation.Mvc.dll",
-        "lib/net45/FluentValidation.Mvc.xml"
       ]
     },
     "MediatR/8.0.0": {
@@ -6374,7 +6352,6 @@
       "AutoMapper >= 9.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Domain >= 1.0.0",
-      "FluentValidation.MVC5 >= 8.6.0",
       "MediatR >= 8.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 8.0.0",
       "ServiceStack >= 5.7.0"
@@ -6387,11 +6364,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\WebTest\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\benaz\\Documents\\asp-core\\WebTest\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\benaz\\source\\repos\\WebTest\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\benaz\\Documents\\asp-core\\WebTest\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benaz\\source\\repos\\WebTest\\Application\\obj\\",
+      "outputPath": "C:\\Users\\benaz\\Documents\\asp-core\\WebTest\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6410,8 +6387,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\benaz\\source\\repos\\WebTest\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\benaz\\source\\repos\\WebTest\\Domain\\Domain.csproj"
+            "C:\\Users\\benaz\\Documents\\asp-core\\WebTest\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\benaz\\Documents\\asp-core\\WebTest\\Domain\\Domain.csproj"
             }
           }
         }
@@ -6432,10 +6409,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[7.0.0, )"
-          },
-          "FluentValidation.MVC5": {
-            "target": "Package",
-            "version": "[8.6.0, )"
           },
           "MediatR": {
             "target": "Package",
@@ -6468,17 +6441,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'FluentValidation.Mvc5 8.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "FluentValidation.Mvc5",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

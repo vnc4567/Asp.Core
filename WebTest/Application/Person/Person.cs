@@ -5,7 +5,6 @@ using System.Text;
 
 namespace Application.Person
 {
-	[Validator(typeof(PersonValidator))]
 	public class Person
 	{
 		public int Id { get; set; }

@@ -5,3 +5,10 @@
 
 
 <span>@Model.Name</span>
+
+<form asp-controller="Home" asp-action="Update" method="post">
+
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span>
+    <input type="submit" value="submit" />
+</form>

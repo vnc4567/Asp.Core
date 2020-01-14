@@ -5,6 +5,8 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Application;
 using Application.Common.Behaviors;
+using Application.Common.Interfaces;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,8 +30,9 @@ namespace WebTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddMvc();
+            services.AddMvc().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ITestDbContext>()); ;
             services.AddApplication();
+                
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
