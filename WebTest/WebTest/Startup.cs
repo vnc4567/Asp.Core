@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Application;
 using Application.Common.Behaviors;
 using Application.Common.Interfaces;
+using Application.Person;
+using Application.Person.Commands;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -29,10 +32,11 @@ namespace WebTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
-            services.AddMvc().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ITestDbContext>()); ;
             services.AddApplication();
-                
+
+            services.AddControllersWithViews();
+            services.AddMvc()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

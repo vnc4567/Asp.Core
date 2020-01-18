@@ -1,4 +1,4 @@
-﻿using ServiceStack.FluentValidation;
+﻿using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +9,7 @@ namespace Application.Person
 	{
 		public PersonValidator()
 		{
-			RuleFor(x => x.Id).NotNull();
+			RuleFor(x => x.Id).NotNull().InclusiveBetween(18, 60);
 			RuleFor(x => x.Name).NotNull().Length(0, 10);
 			RuleFor(x => x.Email).EmailAddress();
 			RuleFor(x => x.Age).InclusiveBetween(18, 60);

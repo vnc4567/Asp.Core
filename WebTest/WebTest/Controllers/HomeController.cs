@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
-using Application.Person;
+using Application.Person.Commands;
 using Application.Person.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebTest.Models;
@@ -30,12 +28,12 @@ namespace WebTest.Controllers
             return View(result);
         }
 
-        public async Task<IActionResult> Update(PersonVM model)
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesDefaultResponseType]
+        public async Task<IActionResult> Update(UpdatePersonCommand model)
         {
-            //TODO create command
-            GetPersonQuery query = new GetPersonQuery(2);
-            var result = await _mediator.Send(query);
-            return View(result);
+            await _mediator.Send(model);
+            return NoContent();
         }
         public IActionResult Privacy()
         {

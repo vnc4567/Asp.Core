@@ -10,5 +10,13 @@
 
     <input asp-for="Age" />
     <span asp-validation-for="Age"></span>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
     <input type="submit" value="submit" />
 </form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
