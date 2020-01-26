@@ -14,7 +14,10 @@ namespace Application.Person
 		public string Email { get; set; }
 		public int Age { get; set; }
 
-		
 
+		public void Mapping(Profile profile)
+		{
+			profile.CreateMap<Domain.Person, PersonVM>();
+		}
 	}
 }

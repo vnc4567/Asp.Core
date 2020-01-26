@@ -24,9 +24,7 @@ namespace Application.Common.Mappings
             foreach (var type in types)
             {
                 var instance = Activator.CreateInstance(type);
-                var inter = type.GetInterface(typeof(IMapFrom<>).Name);
-                var methodInfo = inter.GetMethod("Mapping");
-                //var methodInfo = type.GetMethod("Mapping");
+                var methodInfo = type.GetMethod("Mapping") ?? type.GetInterface("IMapFrom`1").GetMethod("Mapping");
                 methodInfo?.Invoke(instance, new object[] { this });
             }
         }
