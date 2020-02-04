@@ -10,6 +10,7 @@ using Application.Person;
 using Application.Person.Commands;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,7 +34,7 @@ namespace WebTest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplication();
-
+            services.AddPersistence(Configuration);
             services.AddControllersWithViews();
             services.AddMvc()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());

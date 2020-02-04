@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Common.Interfaces;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,9 +10,27 @@ namespace Application.Common.Behaviors
 {
     public class TransactionBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
-        public Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
+        private readonly ITestDbContext _dbContext;
+
+        public TransactionBehavior(ITestDbContext dbContext)
         {
-            throw new NotImplementedException();
+            _dbContext = dbContext;
+        }
+
+        public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
+        {
+            try
+            {
+                _dbContext.BeginTransactionAsync();
+                var response = await next();
+                _dbContext.CommitTransactionAsync();
+                return response;
+            }
+            catch (Exception)
+            {
+                _dbContext.RollbackTransaction();
+                throw;
+            }
         }
     }
 }
