@@ -1,4 +1,5 @@
 ﻿using Application.Common.Interfaces;
+using Domain;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ namespace Infrastructure.Persistence
 {
     public class TestContext : DbContext, ITestDbContext
     {
-        public TestContext(DbContextOptions<TestContext> options)
-    : base(options)
+        public DbSet<Person> Persons { get; set; }
+        public TestContext(DbContextOptions<TestContext> options): base(options)
         {
         }
         public void BeginTransactionAsync()
