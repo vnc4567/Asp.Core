@@ -17,10 +17,16 @@ namespace Infrastructure.Persistence.Repositories
         {
             _context = context;
         }
-        
+
         public Task<Person> GetPerson(int id)
         {
-           return _context.Persons.SingleOrDefaultAsync(p => p.Id == id);
+            return _context.Persons.SingleOrDefaultAsync(p => p.Id == id);
+        }
+
+        public void Update(Person person)
+        {
+            _context.Persons.Update(person);
+            _context.SaveChanges();
         }
     }
 }

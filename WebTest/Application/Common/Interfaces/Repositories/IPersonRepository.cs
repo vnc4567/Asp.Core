@@ -8,5 +8,7 @@ namespace Application.Common.Interfaces.Repositories
     public interface IPersonRepository
     {
         Task<Domain.Person> GetPerson(int id);
+
+        void Update(Domain.Person person);
     }
 }

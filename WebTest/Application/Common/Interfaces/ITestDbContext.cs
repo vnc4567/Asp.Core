@@ -6,8 +6,8 @@ namespace Application.Common.Interfaces
 {
     public interface ITestDbContext
     {
-        void BeginTransactionAsync();
-        void CommitTransactionAsync();
+        void BeginTransaction();
+        void CommitTransaction();
         void RollbackTransaction();
 
     }

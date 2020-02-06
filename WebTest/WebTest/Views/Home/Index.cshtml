@@ -7,7 +7,7 @@
 <span>@Model.Name</span>
 
 <form asp-controller="Home" asp-action="Update" method="post">
-
+    <input asp-for="Id" type="hidden"/>
     <input asp-for="Age" />
     <span asp-validation-for="Age"></span>
     <input asp-for="Name" />

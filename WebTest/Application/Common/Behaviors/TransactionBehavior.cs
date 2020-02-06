@@ -21,9 +21,9 @@ namespace Application.Common.Behaviors
         {
             try
             {
-                _dbContext.BeginTransactionAsync();
+                _dbContext.BeginTransaction();
                 var response = await next();
-                _dbContext.CommitTransactionAsync();
+                _dbContext.CommitTransaction();
                 return response;
             }
             catch (Exception)
