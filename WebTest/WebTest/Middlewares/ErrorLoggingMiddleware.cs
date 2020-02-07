@@ -25,7 +25,7 @@ namespace WebTest.Middlewares
             }
             catch (Exception e)
             {
-                _logger.LogError($"The following error happened: {e.Message}");
+                _logger.LogError($"Error : {e.Message}");
                 throw;
             }
         }

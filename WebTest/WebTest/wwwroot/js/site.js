@@ -1,4 +1,18 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(function () {
+   
+});
 
-// Write your JavaScript code.
+
+function OnSuccess(response) {
+    toastr.success("Enregistrement réussi");
+}
+function OnFailure(response) {
+    toastr.error("Une erreur est survenue");
+}
+
+$(document).ajaxStart(function (event, xhr, settings) {
+   //Loader show
+
+}).ajaxComplete(function (event, xhr, settings) {
+   //Loader hide
+});

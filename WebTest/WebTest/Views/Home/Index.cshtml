@@ -6,8 +6,8 @@
 
 <span>@Model.Name</span>
 
-<form asp-controller="Home" asp-action="Update" method="post">
-    <input asp-for="Id" type="hidden"/>
+<form asp-controller="Home" asp-action="Update" method="post" data-ajax="true" data-ajax-method="POST" data-ajax-success="OnSuccess" data-ajax-failure="OnFailure">
+    <input asp-for="Id" type="hidden" />
     <input asp-for="Age" />
     <span asp-validation-for="Age"></span>
     <input asp-for="Name" />

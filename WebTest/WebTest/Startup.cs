@@ -43,7 +43,7 @@ namespace WebTest
             services.AddApplication();
             services.AddPersistence(Configuration);
             services.AddControllersWithViews();
-            services.AddMvc()
+            services.AddMvc().AddNToastNotifyToastr()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());
         }
 
@@ -64,6 +64,7 @@ namespace WebTest
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             loggerFactory.AddFile("Logs/mylog-{Date}.txt");
+            app.UseNToastNotify();
             app.UseRouting();
 
             app.UseAuthorization();

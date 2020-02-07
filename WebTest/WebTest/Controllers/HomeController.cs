@@ -29,12 +29,11 @@ namespace WebTest.Controllers
             return View(result);
         }
 
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesDefaultResponseType]
         public async Task<IActionResult> Update(UpdatePersonCommand model)
         {
             await _mediator.Send(model);
-            return NoContent();
+            return RedirectToAction("Index");
         }
         public IActionResult Privacy()
         {
