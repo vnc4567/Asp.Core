@@ -18,6 +18,11 @@ namespace Infrastructure.Persistence.Repositories
             _context = context;
         }
 
+        public Task<List<Person>> GetAll()
+        {
+            return _context.Persons.ToListAsync();
+        }
+
         public Task<Person> GetPerson(int id)
         {
             return _context.Persons.SingleOrDefaultAsync(p => p.Id == id);
