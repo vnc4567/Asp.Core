@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,10 +12,11 @@ namespace Application.Common.Behaviors
     public class RequestPerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly Stopwatch _timer;
-
-        public RequestPerformanceBehavior()
+        private readonly ILogger<TRequest> _logger;
+        public RequestPerformanceBehavior(ILogger<TRequest> logger)
         {
             _timer = new Stopwatch();
+            _logger = logger;
         }
 
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
@@ -28,7 +30,7 @@ namespace Application.Common.Behaviors
             if (_timer.ElapsedMilliseconds > 500)
             {
                 var name = typeof(TRequest).Name;
-                //TODO log
+                _logger.LogCritical($"La requête {name} à mis {_timer.ElapsedMilliseconds} ms");
             }
 
             return response;

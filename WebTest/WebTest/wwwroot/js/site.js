@@ -6,8 +6,8 @@
 function OnSuccess(response) {
     toastr.success("Enregistrement réussi");
 }
-function OnFailure(response) {
-    toastr.error("Une erreur est survenue");
+function OnFailure(event, xhr, settings) {
+    toastr.error(event.responseText);
 }
 
 $(document).ajaxStart(function (event, xhr, settings) {
