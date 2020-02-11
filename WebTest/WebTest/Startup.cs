@@ -1,25 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using Application;
-using Application.Common.Behaviors;
-using Application.Common.Interfaces;
-using Application.Person;
 using Application.Person.Commands;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Infrastructure;
-using MediatR;
+using Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NetCore.AutoRegisterDi;
+using System.Linq;
+using System.Reflection;
 using WebTest.Middlewares;
 
 namespace WebTest
@@ -39,11 +33,13 @@ namespace WebTest
             services.RegisterAssemblyPublicNonGenericClasses(Assembly.Load("Infrastructure"))
        .Where(c => c.Name.EndsWith("Repository"))
        .AsPublicImplementedInterfaces();
-
+            services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<TestContext>()
+           .AddDefaultTokenProviders();
             services.AddApplication();
             services.AddPersistence(Configuration);
             services.AddControllersWithViews();
-            services.AddMvc().AddNToastNotifyToastr()
+            services.AddMvc().AddNToastNotifyToastr().AddRazorRuntimeCompilation()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());
         }
 
@@ -63,6 +59,7 @@ namespace WebTest
             app.UseMiddleware<ErrorLoggingMiddleware>();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();
             loggerFactory.AddFile("Logs/mylog-{Date}.txt");
             app.UseNToastNotify();
             app.UseRouting();

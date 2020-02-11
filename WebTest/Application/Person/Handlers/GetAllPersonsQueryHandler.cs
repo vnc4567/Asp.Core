@@ -2,9 +2,7 @@
 using Application.Person.Queries;
 using AutoMapper;
 using MediatR;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,9 +21,9 @@ namespace Application.Person.Handlers
 
         public async Task<List<PersonVM>> Handle(GetAllPersonsQuery request, CancellationToken cancellationToken)
         {
-            var result = await  _personRepository.GetAll();
+            var result = await _personRepository.GetAll();
 
-           return _mapper.Map<List<PersonVM>>(result);
+            return _mapper.Map<List<PersonVM>>(result);
         }
     }
 }

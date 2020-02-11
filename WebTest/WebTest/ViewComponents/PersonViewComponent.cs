@@ -1,9 +1,6 @@
 ﻿using Application.Person.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace WebTest.ViewComponents
@@ -19,7 +16,7 @@ namespace WebTest.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var listPersons = await _mediator.Send(new GetAllPersonsQuery());
-            return View("_PrintAll",listPersons);
+            return View("_PrintAll", listPersons);
         }
     }
 }

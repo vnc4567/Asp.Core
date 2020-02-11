@@ -12,7 +12,7 @@ namespace Application.Person.Handlers
         private readonly IMapper _mapper;
         private readonly IPersonRepository _personRepository;
 
-        public GetPersonQueryHandler( IMapper mapper,IPersonRepository personRepository)
+        public GetPersonQueryHandler(IMapper mapper, IPersonRepository personRepository)
         {
             _mapper = mapper;
             _personRepository = personRepository;

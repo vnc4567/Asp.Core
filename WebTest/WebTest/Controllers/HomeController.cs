@@ -1,12 +1,11 @@
-﻿using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using Application.Person.Commands;
+﻿using Application.Person.Commands;
 using Application.Person.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using WebTest.Models;
 
 namespace WebTest.Controllers
@@ -25,7 +24,7 @@ namespace WebTest.Controllers
         public async Task<IActionResult> Index()
         {
             GetPersonQuery query = new GetPersonQuery(1);
-            var  result = await _mediator.Send(query);
+            var result = await _mediator.Send(query);
             return View(result);
         }
 
