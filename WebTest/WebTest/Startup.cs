@@ -60,7 +60,7 @@ namespace WebTest
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseAuthentication();
-            loggerFactory.AddFile("Logs/mylog-{Date}.txt");
+            //loggerFactory.AddFile("Logs/mylog-{Date}.txt");
             app.UseNToastNotify();
             app.UseRouting();
 

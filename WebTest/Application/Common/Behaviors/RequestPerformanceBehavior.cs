@@ -27,7 +27,7 @@ namespace Application.Common.Behaviors
             if (_timer.ElapsedMilliseconds > 500)
             {
                 var name = typeof(TRequest).Name;
-                _logger.LogCritical($"La requête {name} à mis {_timer.ElapsedMilliseconds} ms");
+                _logger.LogWarning($"La requête {name} a mis {_timer.ElapsedMilliseconds} ms");
             }
 
             return response;
