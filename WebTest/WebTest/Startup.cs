@@ -30,9 +30,7 @@ namespace WebTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.RegisterAssemblyPublicNonGenericClasses(Assembly.Load("Infrastructure"))
-       .Where(c => c.Name.EndsWith("Repository"))
-       .AsPublicImplementedInterfaces();
+            
             services.AddIdentity<IdentityUser, IdentityRole>()
             .AddEntityFrameworkStores<TestContext>()
            .AddDefaultTokenProviders();

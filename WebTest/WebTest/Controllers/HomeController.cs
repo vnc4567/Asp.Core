@@ -23,9 +23,6 @@ namespace WebTest.Controllers
 
         public async Task<IActionResult> Index()
         {
-            _logger.LogInformation("info");
-            _logger.LogError("error");
-            _logger.LogTrace("trace");
             GetPersonQuery query = new GetPersonQuery(1);
             var result = await _mediator.Send(query);
             return View(result);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Common.Interfaces.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -17,15 +18,18 @@ namespace WebTest.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger _logger;
+        private readonly IMailService _mailService;
 
         public AccountController(
                     UserManager<IdentityUser> userManager,
                     SignInManager<IdentityUser> signInManager,
-                    ILogger<AccountController> logger)
+                    ILogger<AccountController> logger,
+                    IMailService mailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _mailService = mailService;
         }
 
         private void AddErrors(IdentityResult result)
@@ -52,7 +56,6 @@ namespace WebTest.Controllers
             return View();
         }
 
-
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Register(string returnUrl = null)
@@ -60,6 +63,24 @@ namespace WebTest.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
+
+
+
+
+        //
+        // GET: /Account/ConfirmEmail
+        [AllowAnonymous]
+        public async Task<ActionResult> ConfirmEmail(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                return View("Error");
+            }
+            IdentityUser user = await _userManager.FindByIdAsync(userId);
+            IdentityResult result = await  _userManager.ConfirmEmailAsync(user, code);
+            return View(result.Succeeded ? "ConfirmEmail" : "Error");
+        }
+
 
         [HttpPost]
         [AllowAnonymous]
@@ -74,8 +95,11 @@ namespace WebTest.Controllers
                 if (result.Succeeded)
                 {
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToLocal(returnUrl);
+                    string code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Scheme);
+                    _mailService.SendEmailAsync(user.Email, "Confirmer votre compte en cliquant sur <a href=\"" + callbackUrl + "\">here</a>");
+                   
+                    return View("WaitConfirmEmail");
                 }
                 AddErrors(result);
             }
@@ -104,17 +128,24 @@ namespace WebTest.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password,true, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    return RedirectToLocal(returnUrl);
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    if (!_userManager.IsEmailConfirmedAsync(user).Result)
+                    {
+                        ModelState.AddModelError(string.Empty, "Vous n'avez pas valider votre compte avec votre email");
+                        return View(model);
+                    }
+                    return RedirectToAction("Index","Home");
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, "Utilisateur/Mot de passe invalide");
                     return View(model);
                 }
             }
 
             return View(model);
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
