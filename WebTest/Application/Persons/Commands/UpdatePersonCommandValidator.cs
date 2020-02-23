@@ -1,12 +1,12 @@
 ﻿using FluentValidation;
 
-namespace Application.Person
+namespace Application.Persons.Commands
 {
-    public class PersonValidator : AbstractValidator<PersonVM>
+    public class UpdatePersonCommandValidator : AbstractValidator<UpdatePersonCommand>
     {
-        public PersonValidator()
+        public UpdatePersonCommandValidator()
         {
-            RuleFor(x => x.Id).NotNull().InclusiveBetween(18, 60);
+            RuleFor(x => x.Id).NotNull();
             RuleFor(x => x.Name).NotNull().Length(0, 10);
             RuleFor(x => x.Email).EmailAddress();
             RuleFor(x => x.Age).InclusiveBetween(18, 60);

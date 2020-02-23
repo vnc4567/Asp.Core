@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Person.Queries
+namespace Application.Persons.Queries
 {
     public class GetPersonQuery : IRequest<PersonVM>
     {

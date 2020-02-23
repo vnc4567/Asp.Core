@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System.Collections.Generic;
 
-namespace Application.Person.Queries
+namespace Application.Persons.Queries
 {
     public class GetAllPersonsQuery : IRequest<List<PersonVM>>
     {

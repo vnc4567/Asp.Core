@@ -1,12 +1,12 @@
 ﻿using Application.Common.Interfaces.Repositories;
-using Application.Person.Queries;
+using Application.Persons.Queries;
 using AutoMapper;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.Person.Handlers
+namespace Application.Persons.Handlers
 {
     public class GetAllPersonsQueryHandler : IRequestHandler<GetAllPersonsQuery, List<PersonVM>>
     {

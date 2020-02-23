@@ -1,5 +1,5 @@
 using Application;
-using Application.Person.Commands;
+using Application.Persons.Commands;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Infrastructure;

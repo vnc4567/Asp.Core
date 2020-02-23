@@ -1,5 +1,5 @@
-﻿using Application.Person.Commands;
-using Application.Person.Queries;
+﻿using Application.Persons.Commands;
+using Application.Persons.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

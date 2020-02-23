@@ -1,4 +1,4 @@
-﻿using Application.Person.Queries;
+﻿using Application.Persons.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;

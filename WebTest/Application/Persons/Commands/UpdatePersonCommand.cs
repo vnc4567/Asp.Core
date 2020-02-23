@@ -1,14 +1,13 @@
 ﻿using Application.Common.Mappings;
+using MediatR;
 
-namespace Application.Person
+namespace Application.Persons.Commands
 {
-    public class PersonVM : IMapFrom<Domain.Person>
+    public class UpdatePersonCommand : IRequest, IMapFrom<Domain.Person>
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public int Age { get; set; }
-
-
     }
 }

@@ -1,9 +1,9 @@
 ﻿using Application.Common.Interfaces.Repositories;
-using Application.Person.Commands;
+using Application.Persons.Commands;
 using AutoMapper;
 using MediatR;
 
-namespace Application.Person.Handlers
+namespace Application.Persons.Handlers
 {
     public class UpdatePersonHandler : RequestHandler<UpdatePersonCommand>
     {
