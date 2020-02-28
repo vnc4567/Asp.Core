@@ -22,9 +22,6 @@
     <PackageReference Include="NetCore.AutoRegisterDi" Version="1.1.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.0" />
     <PackageReference Include="NToastNotify" Version="6.0.2" />
-    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
-    <PackageReference Include="Serilog.Sinks.Splunk" Version="3.3.0" />
-    <PackageReference Include="Serilog.Sinks.Splunk.TCP" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>

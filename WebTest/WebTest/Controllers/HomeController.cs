@@ -10,15 +10,10 @@ using WebTest.Models;
 
 namespace WebTest.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IMediator _mediator;
-
-        public HomeController(ILogger<HomeController> logger, IMediator mediator)
+        public HomeController(ILogger<HomeController> logger, IMediator mediator) : base(logger, mediator)
         {
-            _logger = logger;
-            _mediator = mediator;
         }
 
         public async Task<IActionResult> Index()
