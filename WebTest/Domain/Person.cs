@@ -1,6 +1,8 @@
-﻿namespace Domain
+﻿using Domain.Common;
+
+namespace Domain
 {
-    public class Person
+    public class Person : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
