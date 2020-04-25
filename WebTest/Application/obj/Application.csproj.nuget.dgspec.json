@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Application\\Application.csproj": {}
+    "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Application\\Application.csproj": {
+    "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Application\\obj\\",
+        "outputPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\benaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj"
+              "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj": {
+    "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\Source\\Repos\\Asp.Core\\WebTest\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\benaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
