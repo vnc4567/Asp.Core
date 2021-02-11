@@ -1,3 +1,4 @@
+using App.Metrics.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -30,6 +31,8 @@ namespace WebTest
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+            //.UseMetrics()
+            //.UseMetricsWebTracking()
             .ConfigureLogging(logBuilder =>
             {
                 logBuilder.ClearProviders();

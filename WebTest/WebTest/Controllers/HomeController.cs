@@ -18,8 +18,7 @@ namespace WebTest.Controllers
 
         public async Task<IActionResult> Index()
         {
-            GetPersonQuery query = new GetPersonQuery(1);
-            var result = await _mediator.Send(query);
+            var result = await _mediator.Send(new GetPersonQuery(1));
             return View(result);
         }
 

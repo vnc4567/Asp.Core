@@ -97,3 +97,7 @@ C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\bin\Debug\netcoreapp3.1\Domain
 C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
 C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\obj\Debug\netcoreapp3.1\Test.dll
 C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\obj\Debug\netcoreapp3.1\Test.pdb
+C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+C:\Users\benaz\source\repos\Asp.Core\WebTest\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache

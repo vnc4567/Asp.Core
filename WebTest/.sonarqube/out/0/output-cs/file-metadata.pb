@@ -1,0 +1,10 @@
+N
+EC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Common\IEntity.csutf-8M
+DC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Dollar\Dollar.csutf-8F
+=C:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Person.csutf-8_
+VC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Specifications\AndSpecification.csutf-8^
+UC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Specifications\OrSpecification.csutf-8`
+WC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Specifications\ParameterReplacer.csutf-8\
+SC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\Specifications\Specification.csutf-8…
+zC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8m
+bC:\Users\benaz\source\repos\Asp.Core\WebTest\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.csutf-8

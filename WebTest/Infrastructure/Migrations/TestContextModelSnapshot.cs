@@ -29,6 +29,9 @@ namespace Infrastructure.Migrations
                     b.Property<string>("Adresse")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Adresse2")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Age")
                         .HasColumnType("int")
                         .HasMaxLength(15);

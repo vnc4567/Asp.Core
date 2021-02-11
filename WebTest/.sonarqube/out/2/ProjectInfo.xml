@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Infrastructure</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>40df0edf-c6ae-46d8-8ae9-96f87d887957</ProjectGuid>
+  <FullPath>C:\Users\benaz\source\repos\Asp.Core\WebTest\Infrastructure\Infrastructure.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Users\benaz\source\repos\Asp.Core\WebTest\.sonarqube\out\2\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\benaz\source\repos\Asp.Core\WebTest\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll.RoslynCA.json|C:\Users\benaz\source\repos\Asp.Core\WebTest\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\benaz\source\repos\Asp.Core\WebTest\.sonarqube\out\2</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>netcoreapp3.1</TargetFramework>
+</ProjectInfo>

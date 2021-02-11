@@ -31,3 +31,4 @@ C:\Users\benaz\Source\Repos\Asp.Core\WebTest\Application\obj\Debug\netcoreapp3.1
 C:\Users\benaz\Source\Repos\Asp.Core\WebTest\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
 C:\Users\benaz\Source\Repos\Asp.Core\WebTest\Application\obj\Debug\netcoreapp3.1\Application.dll
 C:\Users\benaz\Source\Repos\Asp.Core\WebTest\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\benaz\source\repos\Asp.Core\WebTest\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
