@@ -21,7 +21,7 @@ namespace Application.Persons.Handlers
 
         public async Task<List<PersonVM>> Handle(GetAllPersonsQuery request, CancellationToken cancellationToken)
         {
-            var result = await _personRepository.GetAll();
+            var result = await _personRepository.GetAllAsync();
             return _mapper.Map<List<PersonVM>>(result);
         }
     }

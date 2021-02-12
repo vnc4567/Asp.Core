@@ -1,24 +1,33 @@
 ﻿using Application.Common.Interfaces.Repositories;
 using Application.Persons.Commands;
-using AutoMapper;
+using Domain;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Application.Persons.Handlers
 {
-    public class UpdatePersonHandler : RequestHandler<UpdatePersonCommand>
+    public class UpdatePersonHandler : IRequestHandler<UpdatePersonCommand>
     {
         private readonly IPersonRepository _personRepository;
-        private readonly IMapper _mapper;
 
-        public UpdatePersonHandler(IMapper mapper, IPersonRepository personRepository)
+        public UpdatePersonHandler(IPersonRepository personRepository)
         {
-            _mapper = mapper;
             _personRepository = personRepository;
         }
-        protected override void Handle(UpdatePersonCommand request)
+
+        public async Task<Unit> Handle(UpdatePersonCommand request, CancellationToken cancellationToken)
         {
-            var person = _mapper.Map<Domain.Person>(request);
-            _personRepository.Update(person);
+            Person person = new Person
+            {
+                AgePerson = new AgePerson(request.Age),
+                Email = request.Email,
+                Name = request.Name,
+                Id = request.Id
+            };
+
+            await _personRepository.UpdateAsync(person);
+            return Unit.Value;
         }
     }
 }

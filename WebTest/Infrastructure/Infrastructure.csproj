@@ -1,8 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210212084613_ValueObjectAge.cs" />
+    <Compile Remove="Migrations\20210212084613_ValueObjectAge.Designer.cs" />
+    <Compile Remove="Migrations\20210212085939_ValueObjectAge.cs" />
+    <Compile Remove="Migrations\20210212085939_ValueObjectAge.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />

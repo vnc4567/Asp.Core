@@ -28,7 +28,7 @@ namespace Application.Persons.Queries
         public async Task<PersonVM> Handle(GetPersonQuery request, CancellationToken cancellationToken)
         {
             PrimaryKeySpecification pkSpec = new PrimaryKeySpecification(request.Id);
-            var result = await _personRepository.GetPerson(pkSpec);
+            var result = await _personRepository.GetPersonAsync(pkSpec);
             return _mapper.Map<PersonVM>(result);
         }
     }

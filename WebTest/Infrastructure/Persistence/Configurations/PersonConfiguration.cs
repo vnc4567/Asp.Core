@@ -8,8 +8,11 @@ namespace Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Person> builder)
         {
+            builder.OwnsOne(u => u.AgePerson, b =>
+            {
+                b.Property(e => e.Value).HasConversion<int>();
+            });
             builder.Property(e => e.Email).HasMaxLength(50);
-            builder.Property(e => e.Age).HasMaxLength(15);
         }
     }
 }

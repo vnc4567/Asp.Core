@@ -14,7 +14,7 @@ namespace Application.Persons.Specifications
         }
 
         public override Expression<Func<Person, bool>> ToExpression() =>
-            person => person.Age == _age;
+            person => person.AgePerson.Value == _age;
 
     }
 }
