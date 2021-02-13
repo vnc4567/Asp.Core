@@ -154,6 +154,93 @@
         }
       }
     },
+    "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\benaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "NetCore.AutoRegisterDi": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -183,6 +270,9 @@
               },
               "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\benaz\\source\\repos\\Asp.Core\\WebTest\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -208,6 +298,18 @@
             "MediatR": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

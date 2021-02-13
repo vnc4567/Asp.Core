@@ -7,6 +7,9 @@ using Domain.Specifications;
 using NSubstitute;
 using System.Threading.Tasks;
 using Xunit;
+using Shouldly;
+using AutoMapper;
+using Application.Common.Mappings;
 
 namespace Test.Persons
 {
@@ -20,18 +23,23 @@ namespace Test.Persons
         {
             fixture = new Fixture();
             fixture.Customize(new AutoNSubstituteCustomization());
+            var mappingConfig = new MapperConfiguration(cfg => cfg.AddProfile(new MappingProfile()));
+            IMapper mapper = mappingConfig.CreateMapper();
+            fixture.Inject(mapper);
             personRepository = fixture.Freeze<IPersonRepository>();
             sut = fixture.Create<GetPersonQueryHandler>();
         }
 
         [Fact]
         [Trait("Catégorie", "Unit")]
-        public async Task Should_UpdatePerson()
+        public async Task Should_GetPerson()
         {
             Person person = fixture.Create<Person>(); 
             personRepository.GetPersonAsync(Arg.Any<Specification<Person>>()).Returns(person);
-            await sut.Handle(new GetPersonQuery(1), new System.Threading.CancellationToken());
+            var personVM = await sut.Handle(new GetPersonQuery(1), new System.Threading.CancellationToken());
             await personRepository.Received().GetPersonAsync(Arg.Any<Specification<Person>>());
+            personVM.Age.ShouldBe(person.AgePerson.Value);
         }
+
     }
 }
