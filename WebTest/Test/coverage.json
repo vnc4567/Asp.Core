@@ -1,0 +1,2920 @@
+{
+  "Application.dll": {
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\DependencyInjection.cs": {
+      "Application.DependencyInjection": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection Application.DependencyInjection::AddApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\PersonValidator.cs": {
+      "Application.Persons.PersonValidator": {
+        "System.Void Application.Persons.PersonValidator::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\PersonVM.cs": {
+      "Application.Persons.PersonVM": {
+        "System.Int32 Application.Persons.PersonVM::get_Id()": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        },
+        "System.String Application.Persons.PersonVM::get_Name()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.String Application.Persons.PersonVM::get_Email()": {
+          "Lines": {
+            "10": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 Application.Persons.PersonVM::get_Age()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "System.Void Application.Persons.PersonVM::Mapping(AutoMapper.Profile)": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 2,
+            "17": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Specifications\\AgeSpecification.cs": {
+      "Application.Persons.Specifications.AgeSpecification": {
+        "System.Linq.Expressions.Expression`1<System.Func`2<Domain.Person,System.Boolean>> Application.Persons.Specifications.AgeSpecification::ToExpression()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        },
+        "System.Void Application.Persons.Specifications.AgeSpecification::.ctor(System.Int32)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Specifications\\PrimaryKeySpecification.cs": {
+      "Application.Persons.Specifications.PrimaryKeySpecification": {
+        "System.Linq.Expressions.Expression`1<System.Func`2<Domain.Person,System.Boolean>> Application.Persons.Specifications.PrimaryKeySpecification::ToExpression()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        },
+        "System.Void Application.Persons.Specifications.PrimaryKeySpecification::.ctor(System.Int32)": {
+          "Lines": {
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Queries\\GetPersonQuery.cs": {
+      "Application.Persons.Queries.GetPersonQuery": {
+        "System.Int32 Application.Persons.Queries.GetPersonQuery::get_Id()": {
+          "Lines": {
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.Void Application.Persons.Queries.GetPersonQuery::.ctor(System.Int32)": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        }
+      },
+      "Application.Persons.Queries.GetPersonQueryHandler": {
+        "System.Void Application.Persons.Queries.GetPersonQueryHandler::.ctor(AutoMapper.IMapper,Application.Common.Interfaces.Repositories.IPersonRepository)": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1
+          },
+          "Branches": []
+        }
+      },
+      "Application.Persons.Queries.GetPersonQueryHandler/<Handle>d__3": {
+        "System.Void Application.Persons.Queries.GetPersonQueryHandler/<Handle>d__3::MoveNext()": {
+          "Lines": {
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Handlers\\GetAllPersonsQueryHandler.cs": {
+      "Application.Persons.Handlers.GetAllPersonsQueryHandler": {
+        "System.Void Application.Persons.Handlers.GetAllPersonsQueryHandler::.ctor(AutoMapper.IMapper,Application.Common.Interfaces.Repositories.IPersonRepository)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      },
+      "Application.Persons.Handlers.GetAllPersonsQueryHandler/<Handle>d__3": {
+        "System.Void Application.Persons.Handlers.GetAllPersonsQueryHandler/<Handle>d__3::MoveNext()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Handlers\\UpdatePersonHandler.cs": {
+      "Application.Persons.Handlers.UpdatePersonHandler": {
+        "System.Void Application.Persons.Handlers.UpdatePersonHandler::.ctor(Application.Common.Interfaces.Repositories.IPersonRepository)": {
+          "Lines": {
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 2
+          },
+          "Branches": []
+        }
+      },
+      "Application.Persons.Handlers.UpdatePersonHandler/<Handle>d__2": {
+        "System.Void Application.Persons.Handlers.UpdatePersonHandler/<Handle>d__2::MoveNext()": {
+          "Lines": {
+            "20": 2,
+            "21": 2,
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2,
+            "29": 1,
+            "30": 1,
+            "31": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Commands\\UpdatePersonCommand.cs": {
+      "Application.Persons.Commands.UpdatePersonCommand": {
+        "System.Int32 Application.Persons.Commands.UpdatePersonCommand::get_Id()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.String Application.Persons.Commands.UpdatePersonCommand::get_Name()": {
+          "Lines": {
+            "12": 3
+          },
+          "Branches": []
+        },
+        "System.String Application.Persons.Commands.UpdatePersonCommand::get_Email()": {
+          "Lines": {
+            "13": 3
+          },
+          "Branches": []
+        },
+        "System.Int32 Application.Persons.Commands.UpdatePersonCommand::get_Age()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        },
+        "System.Void Application.Persons.Commands.UpdatePersonCommand::Mapping(AutoMapper.Profile)": {
+          "Lines": {
+            "17": 1,
+            "18": 1,
+            "19": 2,
+            "21": 1
+          },
+          "Branches": []
+        }
+      },
+      "Application.Persons.Commands.PersonValidator": {
+        "System.Void Application.Persons.Commands.PersonValidator::.ctor()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Persons\\Commands\\UpdatePersonCommandValidator.cs": {
+      "Application.Persons.Commands.UpdatePersonCommandValidator": {
+        "System.Void Application.Persons.Commands.UpdatePersonCommandValidator::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Common\\Mappings\\IMapFrom.cs": {
+      "Application.Common.Mappings.IMapFrom`1": {
+        "System.Void Application.Common.Mappings.IMapFrom`1::Mapping(AutoMapper.Profile)": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Common\\Mappings\\MappingProfile.cs": {
+      "Application.Common.Mappings.MappingProfile": {
+        "System.Void Application.Common.Mappings.MappingProfile::ApplyMappingsFromAssembly(System.Reflection.Assembly)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 22,
+            "19": 52,
+            "20": 1,
+            "22": 7,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2,
+            "28": 1
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 146,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 25,
+              "Offset": 87,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 87,
+              "EndOffset": 111,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 26,
+              "Offset": 115,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 26,
+              "Offset": 115,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 146,
+              "EndOffset": 148,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 18
+            },
+            {
+              "Line": 19,
+              "Offset": 6,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            }
+          ]
+        },
+        "System.Void Application.Common.Mappings.MappingProfile::.ctor()": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Common\\Behaviors\\RequestPerformanceBehavior.cs": {
+      "Application.Common.Behaviors.RequestPerformanceBehavior`2": {
+        "System.Void Application.Common.Behaviors.RequestPerformanceBehavior`2::.ctor(Microsoft.Extensions.Logging.ILogger`1<TRequest>)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      },
+      "Application.Common.Behaviors.RequestPerformanceBehavior`2/<Handle>d__3": {
+        "System.Void Application.Common.Behaviors.RequestPerformanceBehavior`2/<Handle>d__3::MoveNext()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 207,
+              "EndOffset": 209,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 207,
+              "EndOffset": 298,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Common\\Behaviors\\RequestValidationBehavior.cs": {
+      "Application.Common.Behaviors.RequestValidationBehavior`2": {
+        "System.Threading.Tasks.Task`1<TResponse> Application.Common.Behaviors.RequestValidationBehavior`2::Handle(TRequest,System.Threading.CancellationToken,MediatR.RequestHandlerDelegate`1<TResponse>)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 53,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 89,
+              "EndOffset": 91,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 89,
+              "EndOffset": 114,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 136,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 136,
+              "EndOffset": 146,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Application.Common.Behaviors.RequestValidationBehavior`2::.ctor(System.Collections.Generic.IEnumerable`1<FluentValidation.IValidator`1<TRequest>>)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Application\\Common\\Behaviors\\TransactionBehavior.cs": {
+      "Application.Common.Behaviors.TransactionBehavior`2": {
+        "System.Void Application.Common.Behaviors.TransactionBehavior`2::.ctor(Application.Common.Interfaces.ITestDbContext)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "Application.Common.Behaviors.TransactionBehavior`2/<Handle>d__2": {
+        "System.Void Application.Common.Behaviors.TransactionBehavior`2/<Handle>d__2::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Domain.dll": {
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Persons\\AgePerson.cs": {
+      "Domain.AgePerson": {
+        "System.Int32 Domain.AgePerson::get_Value()": {
+          "Lines": {
+            "7": 2
+          },
+          "Branches": []
+        },
+        "System.Void Domain.AgePerson::.ctor()": {
+          "Lines": {
+            "5": 12,
+            "6": 12,
+            "8": 12,
+            "9": 7,
+            "10": 7,
+            "11": 7,
+            "12": 1,
+            "13": 12,
+            "14": 6,
+            "15": 6,
+            "16": 12,
+            "17": 12
+          },
+          "Branches": []
+        },
+        "System.Void Domain.AgePerson::.ctor(System.Int32)": {
+          "Lines": {},
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 11,
+              "Offset": 11,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 11,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 11,
+              "Offset": 23,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 6
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Persons\\Person.cs": {
+      "Domain.Person": {
+        "System.Int32 Domain.Person::get_Id()": {
+          "Lines": {
+            "7": 11
+          },
+          "Branches": []
+        },
+        "System.String Domain.Person::get_Name()": {
+          "Lines": {
+            "8": 11
+          },
+          "Branches": []
+        },
+        "System.String Domain.Person::get_Email()": {
+          "Lines": {
+            "9": 9
+          },
+          "Branches": []
+        },
+        "Domain.AgePerson Domain.Person::get_AgePerson()": {
+          "Lines": {
+            "10": 10
+          },
+          "Branches": []
+        },
+        "System.String Domain.Person::get_Adresse()": {
+          "Lines": {
+            "11": 1
+          },
+          "Branches": []
+        },
+        "System.String Domain.Person::get_Adresse2()": {
+          "Lines": {
+            "12": 1
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Person::.ctor()": {
+          "Lines": {
+            "14": 39
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Person::.ctor(System.Int32,System.String,System.String,Domain.AgePerson,System.String,System.String)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Specifications\\AndSpecification.cs": {
+      "Domain.Specifications.AndSpecification`1": {
+        "System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>> Domain.Specifications.AndSpecification`1::ToExpression()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Specifications.AndSpecification`1::.ctor(Domain.Specifications.Specification`1<T>,Domain.Specifications.Specification`1<T>)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Specifications\\OrSpecification.cs": {
+      "Domain.Specifications.OrSpecification`1": {
+        "System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>> Domain.Specifications.OrSpecification`1::ToExpression()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Specifications.OrSpecification`1::.ctor(Domain.Specifications.Specification`1<T>,Domain.Specifications.Specification`1<T>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Specifications\\ParameterReplacer.cs": {
+      "Domain.Specifications.ParameterReplacer": {
+        "System.Linq.Expressions.Expression Domain.Specifications.ParameterReplacer::VisitParameter(System.Linq.Expressions.ParameterExpression)": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Specifications.ParameterReplacer::.ctor(System.Linq.Expressions.ParameterExpression)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Specifications\\Specification.cs": {
+      "Domain.Specifications.Specification`1": {
+        "System.Boolean Domain.Specifications.Specification`1::IsSatisfiedBy(T)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        },
+        "Domain.Specifications.Specification`1<T> Domain.Specifications.Specification`1::And(Domain.Specifications.Specification`1<T>)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Domain.Specifications.Specification`1<T> Domain.Specifications.Specification`1::Or(Domain.Specifications.Specification`1<T>)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Domain\\Common\\BusinessException.cs": {
+      "Domain.Common.BusinessException": {
+        "System.Void Domain.Common.BusinessException::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Common.BusinessException::.ctor(System.String)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        },
+        "System.Void Domain.Common.BusinessException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Infrastructure.dll": {
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\DependencyInjection.cs": {
+      "Infrastructure.DependencyInjection": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection Infrastructure.DependencyInjection::AddPersistence(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.DependencyInjection::.cctor()": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Persistence\\TestContext.cs": {
+      "Infrastructure.Persistence.TestContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<Domain.Person> Infrastructure.Persistence.TestContext::get_Persons()": {
+          "Lines": {
+            "14": 15
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.TestContext::BeginTransaction()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.TestContext::CommitTransaction()": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.TestContext::RollbackTransaction()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.TestContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.TestContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Infrastructure.Persistence.TestContext>)": {
+          "Lines": {
+            "16": 5,
+            "17": 5,
+            "18": 5
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Persistence\\Repositories\\EfPersonRepository.cs": {
+      "Infrastructure.Persistence.Repositories.EfPersonRepository": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository::.ctor(Infrastructure.Persistence.TestContext)": {
+          "Lines": {
+            "14": 5,
+            "15": 5,
+            "16": 5,
+            "17": 5
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfPersonRepository/<GetAllAsync>d__2": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository/<GetAllAsync>d__2::MoveNext()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfPersonRepository/<GetPersonAsync>d__3": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository/<GetPersonAsync>d__3::MoveNext()": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfPersonRepository/<Find>d__4": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository/<Find>d__4::MoveNext()": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfPersonRepository/<GetPersonAsync>d__5": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository/<GetPersonAsync>d__5::MoveNext()": {
+          "Lines": {
+            "34": 1,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfPersonRepository/<UpdateAsync>d__6": {
+        "System.Void Infrastructure.Persistence.Repositories.EfPersonRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Persistence\\Repositories\\EfRepository.cs": {
+      "Infrastructure.Persistence.Repositories.EfRepository`1": {
+        "System.Linq.IQueryable`1<TEntity> Infrastructure.Persistence.Repositories.EfRepository`1::get__readonlyEntities()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<System.String> Infrastructure.Persistence.Repositories.EfRepository`1::get_Includes()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1::Update(TEntity)": {
+          "Lines": {
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0
+          },
+          "Branches": []
+        },
+        "System.Linq.IQueryable`1<TEntity> Infrastructure.Persistence.Repositories.EfRepository`1::GenerateQuery(System.Linq.IQueryable`1<TEntity>,System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>)": {
+          "Lines": {
+            "66": 0,
+            "67": 0,
+            "68": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1::.ctor(Infrastructure.Persistence.TestContext,AutoMapper.IConfigurationProvider)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<AddAsync>d__10": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<AddAsync>d__10::MoveNext()": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<FindAsync>d__11": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<FindAsync>d__11::MoveNext()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": [
+            {
+              "Line": 44,
+              "Offset": 142,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 142,
+              "EndOffset": 144,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<FindReadOnlyAsync>d__13`1": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<FindReadOnlyAsync>d__13`1::MoveNext()": {
+          "Lines": {
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<FilterReadOnlyAsync>d__15`1": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<FilterReadOnlyAsync>d__15`1::MoveNext()": {
+          "Lines": {
+            "71": 0,
+            "72": 0,
+            "73": 0
+          },
+          "Branches": []
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<FilterAsync>d__16": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<FilterAsync>d__16::MoveNext()": {
+          "Lines": {
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "84": 0,
+            "85": 0
+          },
+          "Branches": [
+            {
+              "Line": 79,
+              "Offset": 137,
+              "EndOffset": 77,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 79,
+              "Offset": 137,
+              "EndOffset": 139,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Infrastructure.Persistence.Repositories.EfRepository`1/<AddRangeAsync>d__17": {
+        "System.Void Infrastructure.Persistence.Repositories.EfRepository`1/<AddRangeAsync>d__17::MoveNext()": {
+          "Lines": {
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Persistence\\Configurations\\PersonConfiguration.cs": {
+      "Infrastructure.Persistence.Configurations.PersonConfiguration": {
+        "System.Void Infrastructure.Persistence.Configurations.PersonConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Domain.Person>)": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 2,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200204130913_Init.cs": {
+      "Infrastructure.Migrations.Init": {
+        "System.Void Infrastructure.Migrations.Init::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Migrations.Init::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200204130913_Init.Designer.cs": {
+      "Infrastructure.Migrations.Init": {
+        "System.Void Infrastructure.Migrations.Init::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200205143606_dbset.cs": {
+      "Infrastructure.Migrations.dbset": {
+        "System.Void Infrastructure.Migrations.dbset::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Migrations.dbset::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200205143606_dbset.Designer.cs": {
+      "Infrastructure.Migrations.dbset": {
+        "System.Void Infrastructure.Migrations.dbset::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200211083013_identity.cs": {
+      "Infrastructure.Migrations.identity": {
+        "System.Void Infrastructure.Migrations.identity::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Migrations.identity::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "200": 0,
+            "201": 0,
+            "203": 0,
+            "204": 0,
+            "206": 0,
+            "207": 0,
+            "209": 0,
+            "210": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200211083013_identity.Designer.cs": {
+      "Infrastructure.Migrations.identity": {
+        "System.Void Infrastructure.Migrations.identity::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "297": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200629124717_AddAdresse2.cs": {
+      "Infrastructure.Migrations.AddAdresse2": {
+        "System.Void Infrastructure.Migrations.AddAdresse2::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Migrations.AddAdresse2::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20200629124717_AddAdresse2.Designer.cs": {
+      "Infrastructure.Migrations.AddAdresse2": {
+        "System.Void Infrastructure.Migrations.AddAdresse2::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "300": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20210212090900_ValueObjectAge.cs": {
+      "Infrastructure.Migrations.ValueObjectAge": {
+        "System.Void Infrastructure.Migrations.ValueObjectAge::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.Void Infrastructure.Migrations.ValueObjectAge::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\20210212090900_ValueObjectAge.Designer.cs": {
+      "Infrastructure.Migrations.ValueObjectAge": {
+        "System.Void Infrastructure.Migrations.ValueObjectAge::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0,
+            "308": 0,
+            "309": 0,
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "317": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\Migrations\\TestContextModelSnapshot.cs": {
+      "Infrastructure.Migrations.TestContextModelSnapshot": {
+        "System.Void Infrastructure.Migrations.TestContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "306": 0,
+            "307": 0,
+            "308": 0,
+            "309": 0,
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "315": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Infrastructure\\MailService\\MailService.cs": {
+      "Infrastructure.MailService.MailService": {
+        "System.Void Infrastructure.MailService.MailService::SendEmailAsync(System.String,System.String)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Test.dll": {
+    "C:\\Users\\benaz\\.nuget\\packages\\microsoft.net.test.sdk\\16.2.0\\build\\netcoreapp1.0\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Test\\Persons\\GetPersonHandlerTest.cs": {
+      "Test.Persons.GetPersonHandlerTest": {
+        "System.Void Test.Persons.GetPersonHandlerTest::.ctor()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 2,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.GetPersonHandlerTest/<Should_GetPerson>d__4": {
+        "System.Void Test.Persons.GetPersonHandlerTest/<Should_GetPerson>d__4::MoveNext()": {
+          "Lines": {
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Test\\Persons\\PersonRepositoryTest.cs": {
+      "Test.Persons.PersonRepositoryTest": {
+        "System.Void Test.Persons.PersonRepositoryTest::.ctor()": {
+          "Lines": {
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "20": 5
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.PersonRepositoryTest/<Should_GetPerson>d__2": {
+        "System.Void Test.Persons.PersonRepositoryTest/<Should_GetPerson>d__2::MoveNext()": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.PersonRepositoryTest/<Should_GetPersonSpec>d__3": {
+        "System.Void Test.Persons.PersonRepositoryTest/<Should_GetPersonSpec>d__3::MoveNext()": {
+          "Lines": {
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.PersonRepositoryTest/<Should_UpdatePerson>d__4": {
+        "System.Void Test.Persons.PersonRepositoryTest/<Should_UpdatePerson>d__4::MoveNext()": {
+          "Lines": {
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.PersonRepositoryTest/<Should_FindPerson>d__5": {
+        "System.Void Test.Persons.PersonRepositoryTest/<Should_FindPerson>d__5::MoveNext()": {
+          "Lines": {
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.PersonRepositoryTest/<Should_GetAllPerson>d__6": {
+        "System.Void Test.Persons.PersonRepositoryTest/<Should_GetAllPerson>d__6::MoveNext()": {
+          "Lines": {
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Test\\Persons\\UpdatePersonHandlerTest.cs": {
+      "Test.Persons.UpdatePersonHandlerTest": {
+        "System.Void Test.Persons.UpdatePersonHandlerTest::.ctor()": {
+          "Lines": {
+            "21": 2,
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.UpdatePersonHandlerTest/<Should_UpdatePerson>d__4": {
+        "System.Void Test.Persons.UpdatePersonHandlerTest/<Should_UpdatePerson>d__4::MoveNext()": {
+          "Lines": {
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.UpdatePersonHandlerTest/<>c__DisplayClass5_0": {
+        "System.Threading.Tasks.Task Test.Persons.UpdatePersonHandlerTest/<>c__DisplayClass5_0::<Should_ThrowException_WhenPersonNotValid>b__3()": {
+          "Lines": {
+            "53": 2
+          },
+          "Branches": []
+        }
+      },
+      "Test.Persons.UpdatePersonHandlerTest/<Should_ThrowException_WhenPersonNotValid>d__5": {
+        "System.Void Test.Persons.UpdatePersonHandlerTest/<Should_ThrowException_WhenPersonNotValid>d__5::MoveNext()": {
+          "Lines": {
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "54": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\benaz\\Documents\\Projects\\TemplateASPCore\\WebTest\\Test\\Commons\\Utilities.cs": {
+      "Test.Commons.Utilities": {
+        "System.Void Test.Commons.Utilities::InitializeDbForTests(Infrastructure.Persistence.TestContext)": {
+          "Lines": {
+            "11": 5,
+            "12": 5,
+            "13": 5,
+            "14": 5,
+            "15": 5,
+            "16": 5,
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "20": 5,
+            "21": 5,
+            "22": 5
+          },
+          "Branches": []
+        },
+        "TRepository Test.Commons.Utilities::GetInMemoryRepository()": {
+          "Lines": {
+            "25": 5,
+            "27": 5,
+            "28": 5,
+            "29": 5,
+            "30": 5,
+            "31": 5,
+            "32": 5,
+            "33": 5,
+            "34": 5,
+            "35": 5
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

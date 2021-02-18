@@ -9,6 +9,7 @@ namespace Application.Common.Interfaces.Repositories
         Task<Domain.Person> GetPersonAsync(int id);
         Task<List<Domain.Person>> GetAllAsync();
         Task<Domain.Person> GetPersonAsync(Specification<Domain.Person> specification);
+        Task<IEnumerable<Domain.Person>> Find(Specification<Domain.Person> specification);
         Task UpdateAsync(Domain.Person person);
     }
 }

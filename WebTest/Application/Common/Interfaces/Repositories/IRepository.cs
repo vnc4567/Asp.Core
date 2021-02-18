@@ -11,12 +11,9 @@ namespace Application.Common.Interfaces.Repositories
     {
         ICollection<string> Includes { get; set; }
         Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> func);
-        Task<TReturn> FindReadOnlyAsync<TReturn>(Expression<Func<TEntity, bool>> func);
         Task<TEntity> AddAsync(TEntity entity);
         Task AddRangeAsync(IEnumerable<TEntity> entities);
-        void Update(TEntity entity);
-
+        Task UpdateAsync(TEntity entity);
         Task<ICollection<TEntity>> FilterAsync(Expression<Func<TEntity, bool>> func);
-        Task<ICollection<TReturn>> FilterReadOnlyAsync<TReturn>(Expression<Func<TEntity, bool>> func);
     }
 }

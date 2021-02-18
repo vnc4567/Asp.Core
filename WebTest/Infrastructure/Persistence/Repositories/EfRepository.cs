@@ -17,16 +17,13 @@ namespace Infrastructure.Persistence.Repositories
     {
         private readonly TestContext _context;
         private readonly DbSet<TEntity> _entities;
-        private readonly IConfigurationProvider _configuration;
 
-        private IQueryable<TEntity> _readonlyEntities => _entities.AsNoTracking();
         public ICollection<string> Includes { get; set; } = new List<string>();
 
-        public EfRepository(TestContext context, IConfigurationProvider configuration)
+        public EfRepository(TestContext context)
         {
             this._context = context;
             this._entities = context.Set<TEntity>();
-            _configuration = configuration;
         }
 
         public async Task<TEntity> AddAsync(TEntity entity)
@@ -50,27 +47,18 @@ namespace Infrastructure.Persistence.Repositories
         }
 
 
-        public void Update(TEntity user)
+        public async Task UpdateAsync(TEntity user)
         {
             _entities.Update(user);
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
         }
 
-        public async Task<TReturn> FindReadOnlyAsync<TReturn>(Expression<Func<TEntity, bool>> func)
-        {
-            return await GenerateQuery(_readonlyEntities, func)
-                .ProjectTo<TReturn>(_configuration).SingleOrDefaultAsync();
-        }
 
         private IQueryable<TEntity> GenerateQuery(IQueryable<TEntity> entities, Expression<Func<TEntity, bool>> func)
         {
             return entities.Where(func);
         }
 
-        public async Task<ICollection<TReturn>> FilterReadOnlyAsync<TReturn>(Expression<Func<TEntity, bool>> func)
-        {
-            return await GenerateQuery(_readonlyEntities, func).ProjectTo<TReturn>(_configuration).ToListAsync();
-        }
 
         public async Task<ICollection<TEntity>> FilterAsync(Expression<Func<TEntity, bool>> func)
         {

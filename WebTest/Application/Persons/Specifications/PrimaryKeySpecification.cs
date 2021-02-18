@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Application.Persons.Specifications
 {
-    class PrimaryKeySpecification : Specification<Person>
+    public class PrimaryKeySpecification : Specification<Person>
     {
         private readonly int _id;
         public PrimaryKeySpecification(int id)

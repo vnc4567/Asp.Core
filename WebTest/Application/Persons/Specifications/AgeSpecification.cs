@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Application.Persons.Specifications
 {
-    class AgeSpecification : Specification<Person>
+    public class AgeSpecification : Specification<Person>
     {
         private readonly int _age;
         public AgeSpecification(int age)

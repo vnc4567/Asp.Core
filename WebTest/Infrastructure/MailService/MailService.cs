@@ -1,8 +1,5 @@
 ﻿using Application.Common.Interfaces.Services;
-using System;
-using System.Collections.Generic;
 using System.Net.Mail;
-using System.Text;
 
 namespace Infrastructure.MailService
 {
