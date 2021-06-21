@@ -18,6 +18,7 @@ namespace Test.Commons
             DbContext = new TestContext(options);
             DbContext.Database.EnsureDeleted();
             DbContext.Database.EnsureCreated();
+            //https://stackoverflow.com/questions/59668237/disable-autodetectchanges-on-entity-framework-core
             InitializeDbForTests(DbContext);
         }
         private  void InitializeDbForTests(TestContext db)
