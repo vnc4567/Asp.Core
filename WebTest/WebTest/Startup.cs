@@ -52,14 +52,19 @@ namespace WebTest
                 options.EnableMvcFilterProfiling = true;
                 options.EnableMvcViewProfiling = true;
             }).AddEntityFramework();
+
             services.AddIdentity<IdentityUser, IdentityRole>()
-            .AddEntityFrameworkStores<TestContext>()
-           .AddDefaultTokenProviders();
+                    .AddEntityFrameworkStores<TestContext>()
+                    .AddDefaultTokenProviders();
+            
             services.AddApplication();
             services.AddPersistence(Configuration);
+            
             services.AddControllersWithViews();
+
             services.AddMvc().AddNToastNotifyToastr().AddRazorRuntimeCompilation()
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());
+                    .AddFluentValidation(
+                        fv => fv.RegisterValidatorsFromAssemblyContaining<UpdatePersonCommandValidator>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

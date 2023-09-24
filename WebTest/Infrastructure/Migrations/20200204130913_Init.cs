@@ -21,6 +21,11 @@ namespace Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Person", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Person",
+                columns: new[]{"Name", "Age"},
+                values: new object[] { "Vincent", 10 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
